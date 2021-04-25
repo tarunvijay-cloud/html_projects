@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript How to find the largest of three Numbers. TEST</title>
+</head>
+<body>
+<h1>Greatest Of 3 Numbers 92 </h1>
+Number: <input name="number" id="x"><br>
+Number: <input name="number" id="y"><br>
+Number: <input name="number" id="z"><br><br><br>
+
+<button onclick= "start()">Greatest Number</button>
+
+<script>
+
+
+function start() {
+var inputOne = parseInt(document.getElementById('x').value);
+var inputTwo = parseInt(document.getElementById('y').value);
+var inputThree = parseInt(document.getElementById('z').value);
+
+ document.write("Input One : " + inputOne);
+ document.write("<br>");
+document.write("<br>");
+ document.write("Input Two : " + inputTwo);
+ document.write("<br>");
+document.write("<br>");
+ document.write("Input Three : " + inputThree);
+document.write("<br>");
+document.write("<br>");
+
+if ((inputOne > inputTwo) && (inputOne > inputThree)) 
+{
+	document.write(inputOne + " Is The Greatest Number");
+}
+else if ((inputTwo > inputOne) && (inputTwo > inputThree)) {
+	document.write(inputTwo + " Is The Greatest Number");
+} 
+else if ((inputThree > inputOne) && (inputThree > inputTwo)) {
+	document.write(inputThree + " Is The Greatest Number");
+}
+
+else  {
+	document.write(inputThree + " All Entered Numbers are equal");
+}
+}
+
+//((inputOne == inputTwo) && (inputTwo ==  inputThree))
+</script>
+</body>
+</html>

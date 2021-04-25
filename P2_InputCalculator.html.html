@@ -1,0 +1,154 @@
+
+Tarun Kumar
+8:03 PM (1 minute ago)
+to me
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Calculator</title>
+ 
+</head>
+
+<body>
+<h1>The Calculator</h1>
+
+
+<style>
+body {
+  background-image: url('https://i.pinimg.com/736x/28/06/06/280606a9b1f0bbd93406059a42dc0ba8.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+
+
+
+
+  x: <input name="x" id="x"><br>
+  y: <input  name="y" id="y"><br>
+  <button onclick="add(document.getElementById('x').value,document.getElementById('y').value)">Add</button>
+ 
+  <br>
+  <br>
+  <br>
+  <br>
+ 
+  x: <input name="a" id="a"><br>
+  y: <input  name="b" id="b"><br>
+ <button onclick="subtract(document.getElementById('a').value,document.getElementById('b').value)">Subtract</button>
+ 
+  <br>
+  <br>
+  <br>
+  <br>
+ 
+ 
+  x: <input name="z" id="z"><br>
+  y: <input  name="v" id="v"><br>
+  <br>
+  <button onclick="multiply(document.getElementById('z').value,document.getElementById('v').value)">Multiply</button>
+ 
+  <br>
+  <br>
+  <br>
+  <br>
+ 
+ 
+ 
+  x: <input name="j" id="j"><br>
+  y: <input  name="k" id="k"><br>
+  <button onclick="divide(document.getElementById('j').value,document.getElementById('k').value)">Divide</button>
+ 
+  <br>
+  <br>
+  <br>
+  <br>
+ 
+ 
+ 
+ 
+
+
+<script>
+
+
+
+
+  function add(x,y) {
+    var sum = parseInt(x) + parseInt(y);
+   
+   
+   
+   document.write("Addition = " + (sum));
+
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  function subtract(a,b) {
+    var subtract = parseInt(a) - parseInt(b);
+   
+   
+   
+   document.write("Subtraction = " + (subtract));
+
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  function multiply(z,v) {
+    var multiply = parseInt(z) * parseInt(v);
+
+   
+   
+   document.write("Multiplication = " + (multiply));
+
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  function divide(j,k) {
+    var divide = parseInt(j) / parseInt(k);
+   
+   
+   
+   document.write("Division = " + (divide));
+
+  }
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</script>
+</body>
+
+</html>

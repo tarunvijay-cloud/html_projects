@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<title>Area Of Circle</title>
+<body>
+
+<h1>Area Of Circle</h1>
+<h3>Simply enter the radius of your circle and the computer will tell you the area of the circle. Remember a radius is half of the Diameter.</h3><br><br><br>
+
+
+
+<img src="https://www.onlinemath4all.com/images/circumferenceofcircle.png" alt="Trulli" width="500" height="333"><br><br>
+<br>
+
+
+
+
+<b>Radius: <input name="number" id="r"></b><br><br>
+
+
+
+
+<b><button onclick= "start()">Area</button></b>
+<script>
+
+
+
+function start() {
+var radius = parseInt(document.getElementById('r').value);
+
+var pi = 3.14159;
+
+
+var area = pi * radius * radius;
+
+document.write("The area of the Circle is " + area);
+
+}
+
+
+
+
+
+
+</script>
+</body>
+</html>
+
+

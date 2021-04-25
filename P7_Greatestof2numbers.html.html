@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<title>Greatest Of 2 Numbers  </title>
+<body>
+
+<h1> Greatest Of 2 Numbers</h1>
+Number One: <input name="number" id="x"><br>
+Number Two: <input name="number" id="y"><br>
+<br>
+<br>
+
+
+<button onclick= "start()">Greatest Number</button>
+
+<script>
+
+function start() {
+var inputOne = parseInt(document.getElementById('x').value);
+var inputTwo = parseInt(document.getElementById('y').value);
+
+
+document.write(inputOne);
+document.write("<br>");
+document.write(inputTwo);
+document.write("<br>");
+document.write("<br>");
+
+
+if ( inputOne > inputTwo) {
+ document.write(inputOne + " Is the greatest number");
+} else if ( inputOne < inputTwo) { 
+	 document.write(inputTwo + " Is the greatest number");
+} else {
+	 document.write("They Both Have The Same Value");	
+}
+	
+	
+	
+}
+</script>
+
+</body>
+</html>

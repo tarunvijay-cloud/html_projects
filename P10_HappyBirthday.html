@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday Card</title>
+
+<script>
+
+function getInput() {
+	var userInput = document.getElementById('userInput').value;
+	var age = document.getElementById('x').value;
+	//   document.write("Happy Birthday " + userInput + " Your a great person and you are a very nice friend. Keep up thje good work and have a great life. Congrats on your " + age);
+//	 document.write('test');
+	 document.getElementById('p1').innerHTML = userInput;
+	 document.getElementById('p2').innerHTML = age;
+}  
+</script>
+
+</head>
+
+<body>
+	<h1>Happy Birthday Card</h1>
+	<p>Simply enter your Name and the computer will print your Birthday Card.</p>
+
+	<form>
+		Name: <input name="userInput" id="userInput"><br>
+		Age: <input name="x" id="x"><br>
+		<input type="button" value="Submit" id="btnSubmit" onclick="getInput()">
+	</form>
+
+
+		<h2>Happy Birthday</h2>
+		<h2 id="p1"></h2>
+<h2>Congrats on your</h2>
+		<h2 id="p2"></h2>
+		<h2>birthday</h2>
+
+</body>
+</html>

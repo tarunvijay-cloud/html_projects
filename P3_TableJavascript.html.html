@@ -1,0 +1,113 @@
+
+
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script>
+   
+    var arrHead = new Array();
+    arrHead = ['', 'First Name', 'Last Name', 'Age'];     
+
+
+    function addRow() {
+        var empTab = document.getElementById('empTable');
+
+        var rowCnt = empTab.rows.length;
+        var tr = empTab.insertRow(rowCnt);     
+
+        for (var c = 0; c < arrHead.length; c++) {
+            var td = document.createElement('td');        
+            td = tr.insertCell(c);
+
+            if (c == 0) {    
+
+                var button = document.createElement('input');
+
+
+                button.setAttribute('type', 'button');
+                button.setAttribute('value', 'Remove');
+
+              
+                button.setAttribute('onclick', 'removeRow(this)');
+
+                td.appendChild(button);
+            }
+            else {
+                if (c == 1) {
+                    var values = document.getElementById("empname").value;
+                }
+                if (c == 2) {
+                    var values = document.getElementById("empdesignation").value
+                }
+                if (c == 3) {
+                    var values = document.getElementById("empage").value
+                }
+
+                var ele = document.createElement('LABEL');
+                ele.setAttribute('type', 'text');
+
+                ele.innerHTML = values;
+                td.appendChild(ele);
+            }
+        }
+    }
+
+
+    function removeRow(aButton) {
+        var empTab = document.getElementById('empTable');
+        empTab.deleteRow(aButton.parentNode.parentNode.rowIndex);       
+    }
+
+   
+</script>
+
+<html>
+<head>
+    <title>Javascript Table</title>
+
+    <style>
+        table 
+        {
+            width: 70%;
+            font: 17px Calibri;
+        }
+        table, th, td 
+        {
+            border: solid 1px #DDD;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body >
+
+<b><p>------------First Name-----------------------Last Name -------------------------------Age </p></b>
+    <input type=text id="empname"  />
+    <input type=text id="empdesignation"   />
+    <input type=text id="empage" />
+    <p>
+        <input type="button" id="addRow" value="Add New Row" onclick="addRow()" />
+    </p>
+
+    <table id="empTable" class="table table-bordered table-hover table-striped">
+    <thead>
+    <tr>
+    <th></th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Age</th>
+    </tr>
+    <tbody>
+      <tr>
+      </tr>
+      </tbody>
+    </table>
+    <div id="cont"></div>
+
+    <p><input type="button" id="bt" value="Sumbit Data" onclick="sumbit()" /></p>
+</body>
+
+
+</html>
